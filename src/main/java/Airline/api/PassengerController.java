@@ -42,26 +42,7 @@ public class PassengerController {
     TicketRepository ticketRepository;
     @Autowired
     FlightRepository flightRepository;
-   // @RequestMapping(value = "/passenger/create",method = RequestMethod.POST)
-   // public ResponseEntity<Void> createPassenger(@RequestBody Passenger passenger, UriComponentsBuilder ucBuilder)
-   // {
-   //     service.newPassenger();
-   // }
-//    public ResponseEntity<Void> createSubject(@RequestBody Subject subject,    UriComponentsBuilder ucBuilder) {
-//        System.out.println("Creating Subject " + subject.getName());
 
-//     USE THIS IF YOU WANT TO CHECK UNIQUE OBJECT
-//      if (SubjectService.isSubjectExist(Subject)) {
-//            System.out.println("A Subject with name " + Subject.getName() + " already exist");
-//            return new ResponseEntity<Void>(HttpStatus.CONFLICT);
-//        }
-
- //       service.save(subject);
-
-    //    HttpHeaders headers = new HttpHeaders();
-     //   headers.setLocation(ucBuilder.path("/subject/{id}").buildAndExpand(subject.getId()).toUri());
-     //   return new ResponseEntity<Void>(headers, HttpStatus.CREATED);
-  //  }
     //Creates new Ticket
     @RequestMapping(value = "/ticket/create", method = RequestMethod.POST)
     public ResponseEntity<Void> newTicket(@RequestParam long userid,
